@@ -1,14 +1,17 @@
 package hqyj.springbootconfgurationfiledemo;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(prefix = "person")
 public class personClass
 {
+    @Value("#{10*2}")
     private int age;
+    @Value("${person.name}")
     private  String name;
+    @Value("${person.sex}")
     private String sex;
 
     public int getAge() {

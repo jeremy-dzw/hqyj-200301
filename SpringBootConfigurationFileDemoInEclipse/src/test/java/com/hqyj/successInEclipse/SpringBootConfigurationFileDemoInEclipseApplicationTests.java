@@ -13,7 +13,6 @@ public class SpringBootConfigurationFileDemoInEclipseApplicationTests {
 	@Autowired
 	PersonClass person;
 
-
 	@Test
 	public void contextLoads() 
 	{
