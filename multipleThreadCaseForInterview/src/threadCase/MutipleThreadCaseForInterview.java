@@ -1,9 +1,9 @@
 package threadCase;
 /**
- * 多线程并发处理同一个资源时，存在严重问题
+ * 多线程并发处理同一个资源时，存在问题
  * **/
 public class MutipleThreadCaseForInterview implements Runnable
-{   int ticketNumber = 10;
+{   int ticketNumber = 20;
     @Override
     public void run()
     {
